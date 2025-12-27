@@ -1,1 +1,143 @@
-/* место для вашего кода */
+/*Дополнительные и повторяющиеся классы*/
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/*Убираем white desk in header__links-list-item*/
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+/*Убираем letter spacing в cover__title*/
+.no-letter-spacing {
+  letter-spacing: none;
+}
+
+/* Блок header*/
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  min-height: 293px;
+  padding: 92px 50 96px 50px;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.header__links-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: circle;
+}
+
+.header__link {
+  font-size: 18px;
+  font-weight: 400;
+  gap: 10px;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__links-list-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header__logo {
+  display: block;
+  width: 146px;
+  height: 105px;
+  align-self: center;
+  justify-self: center;
+}
+
+.header_address {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+
+/*-------------------------------------------------------------------------- End of header*/
+
+/*Блок cover*/
+
+.cover {
+  min-height: 757px;
+  position: relative;
+  background-image: url(../images/cover.jpg);
+}
+
+.cover__title {
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  line-height: 115px;
+  letter-spacing: 0.3em;
+}
+
+.aligned-text_left {
+  display: block;
+  text-align: left;
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
+}
+
+.aligned-text_right {
+  display: block;
+  text-align: right;
+}
+/*Блок lots*/
+
+.lots {
+  background-color: #ffffff;
+  min-height: 723px;
+  background-color: aquamarine;
+  padding: 0 24px;
+}
+
+/*Блок about*/
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  background-color: #f5f5f5;
+  min-height: 595px;
+  padding: 0 24px;
+}
+.round {
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+/*-------------------------------------------------------------------------- End of about*/
+/*Блок footer*/
+
+.footer {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
