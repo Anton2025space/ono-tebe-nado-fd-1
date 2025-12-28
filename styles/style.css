@@ -1,12 +1,7 @@
 /*Дополнительные и повторяющиеся классы*/
+
 .overlay {
   background: rgba(0, 0, 0, 0.6);
-}
-
-/*Убираем white desk in header__links-list-item*/
-
-.header__links-list-item_no-bullit {
-  list-style-type: none;
 }
 
 /*Убираем letter spacing в cover__title*/
@@ -23,37 +18,34 @@
   min-height: 293px;
   padding: 92px 50 96px 50px;
 }
-
 .header__menu {
   display: flex;
   flex-direction: row;
   align-content: space-between;
   justify-content: center;
-  text-decoration: underline;
+  text-transform: lowercase;
 }
-
 .header__links-list {
   display: flex;
   align-items: center;
-  gap: 25px;
-  list-style: circle;
+  gap: 21px;
+  list-style: none;
 }
-
 .header__link {
   font-size: 18px;
   font-weight: 400;
-  gap: 10px;
+  line-height: 1;
+  gap: 14px;
 }
-
-.header__link_active {
-  text-decoration: none;
-}
-
 .header__links-list-item {
   display: flex;
   align-items: flex-start;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
-
+.header__link_active {
+  text-decoration: none;
+}
 .header__logo {
   display: block;
   width: 146px;
@@ -61,7 +53,6 @@
   align-self: center;
   justify-self: center;
 }
-
 .header_address {
   display: flex;
   flex-direction: column;
@@ -73,7 +64,18 @@
   font-style: normal;
   line-height: 24px;
 }
+.header__links-list-item + .header__links-list-item::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  margin-top: 8px;
 
+}
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
 /*-------------------------------------------------------------------------- End of header*/
 
 /*Блок cover*/
@@ -83,7 +85,6 @@
   position: relative;
   background-image: url(../images/cover.jpg);
 }
-
 .cover__title {
   font-size: 100px;
   font-weight: 700;
@@ -92,21 +93,21 @@
   line-height: 115px;
   letter-spacing: 0.3em;
 }
-
 .aligned-text_left {
   display: block;
   text-align: left;
 }
-
 .aligned-text_center {
   display: block;
   text-align: center;
 }
-
 .aligned-text_right {
   display: block;
   text-align: right;
 }
+
+/*----------------------------------------------------------------------------  End of cover*/
+
 /*Блок lots*/
 
 .lots {
@@ -115,6 +116,8 @@
   background-color: aquamarine;
   padding: 0 24px;
 }
+
+/*-------------------------------------------------------------------------- End of lots*/
 
 /*Блок about*/
 
@@ -141,3 +144,5 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+/*-------------------------------------------------------------------------- End of footer*/
