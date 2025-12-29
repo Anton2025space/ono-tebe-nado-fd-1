@@ -1,1 +1,1 @@
-https://github.com/Anton2025space/ono-tebe-nado-fd
+https://github.com/Anton2025space/ono-tebe-nado-fd-1
