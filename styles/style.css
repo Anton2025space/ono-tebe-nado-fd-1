@@ -113,10 +113,9 @@
 }
 .cover__description {
   display: flex;
-  padding: 28px 0 0 50px;
   justify-content: space-around;
   align-content: center;
-  padding: 106px 25px 0 0;
+  padding: 134px 25px 0 50px;
 }
 .cover__description-text {
   display: flex;
